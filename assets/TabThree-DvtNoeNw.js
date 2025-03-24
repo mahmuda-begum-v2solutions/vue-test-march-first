@@ -1,0 +1,1 @@
+import{d as l,x as c,c as p,o as u,b as e,t,y as s}from"./index-Bf5UDGCi.js";const d={class:"p-4 border rounded"},f=l({__name:"TabThree",props:{title:{},count:{},user:{}},setup(o){const n=o,{title:r,user:a}=c(n);return(i,_)=>(u(),p("div",d,[e("p",null,[e("strong",null,t(s(r)),1)]),e("p",null,"👋 Hello, "+t(s(a).name),1)]))}});export{f as default};
