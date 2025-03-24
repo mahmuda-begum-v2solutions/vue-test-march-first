@@ -1,0 +1,34 @@
+@import './base.css';
+
+/* Avoid duplicating #app */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: if you don't need full centering in body, remove this */
+body {
+  display: flex;
+  place-items: center; /* This works with grid; use align-items if using flex */
+  /* Optional cleanup:
+  If your body is not a grid layout, this won't do anything. */
+}
+
+/* Link styles */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
