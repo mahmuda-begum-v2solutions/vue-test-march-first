@@ -11,17 +11,18 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="app-container">
-  <h1 class="title">Vue + TypeScript (Class) Demos</h1>
+  <div class="app-container">
+    <h1 class="title">Vue + TypeScript (Class) Demos</h1>
 
-  <nav class="nav">
-    <RouterLink to="/" class="nav-link">Fetch All APIs + Search</RouterLink>
-    <RouterLink to="/tictactoe" class="nav-link">Tic Tac Toe (Class-based)</RouterLink>
-    <RouterLink to="/dynamictabs" class="nav-link">Dynamic Tabs with Dynamic Component Use</RouterLink>
-  </nav>
+    <nav class="nav">
+      <RouterLink to="/" class="nav-link">Fetch All APIs + Search</RouterLink>
+      <RouterLink to="/tictactoe" class="nav-link">Tic Tac Toe (Class-based)</RouterLink>
+      <RouterLink to="/dynamictabs" class="nav-link">Dynamic Tabs with Dynamic Component Use</RouterLink>
+      <RouterLink to="/phonebook" class="nav-link">Phonebook sorting</RouterLink>
+    </nav>
 
-  <RouterView />
-</div>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
