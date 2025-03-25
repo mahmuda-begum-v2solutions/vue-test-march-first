@@ -20,13 +20,18 @@ const router = createRouter({
     {
       path: '/tictactoe',
       name: 'tictactoe',
-      component: ()=> import('../views/TicTacToe.vue')
+      component: () => import('../views/TicTacToe.vue'),
     },
     {
       path: '/dynamictabs',
       name: 'dynamictabs',
-      component: ()=> import('../views/DynamicTabs.vue')
-    }
+      component: () => import('../views/DynamicTabs.vue'),
+    },
+    {
+      path: '/phonebook',
+      name: 'phonebook',
+      component: () => import('../views/PhoneBook.vue'),
+    },
   ],
 })
 
