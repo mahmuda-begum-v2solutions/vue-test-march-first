@@ -36,11 +36,11 @@ const openModal = (item: ItemObj) => {
   isVisible.value = true
 }
 
-watch(() => store.searchText, (newval) => {
+watch(() => store.searchText, () => {
   debounce.run(() => store.getFilteredItems())
 })
 
-watch(() => store.itemsArr, (newval) => {
+watch(() => store.itemsArr, () => {
   debounce.run(() => store.getFilteredItems())
 }, { deep: true })
 
@@ -186,5 +186,4 @@ button:last-child {
 .action-buttons button:hover {
   transform: scale(1.2);
 }
-
 </style>
